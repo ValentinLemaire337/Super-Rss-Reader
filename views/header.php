@@ -15,4 +15,3 @@
     <title>Super RSS Reader</title>
 </head>
 <body>
-    <p>bonjour</p>
