@@ -1,7 +1,8 @@
 <?php
 require_once __DIR__ . '/../helpers/dd.php';
+require __DIR__ . '/data.php';
 
-$subjects = ['Tests' => 'https://www.01net.com/tests/feed/','Sécurité' => 'https://www.01net.com/actualites/securite/feed/','Football' =>'https://rmcsport.bfmtv.com/rss/football/','Actualités Jeux Vidéo' => 'https://www.jeuxactu.com/rss/ja.rss', 'Test Jeux Vidéo' =>'https://www.jeuxactu.com/rss/tests.rss'];
+
 
 // var_dump($subjects);
 
@@ -18,3 +19,4 @@ foreach ($subjectsItems as $subjectsItem) {
 
 // objet = propriée=tés - > crochet + nom de clé
 //  par ex : var_dump($xml->channel)
+

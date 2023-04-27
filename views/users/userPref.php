@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . '/../../controllers/parameters-controller.php';
+require __DIR__ . '/../../controllers/data.php';
 
 // ici on traitera les données user concernant le type de flux rss qu'il veut et le nombre d'info a affiché
 ?>
@@ -8,8 +9,6 @@ require __DIR__ . '/../../controllers/parameters-controller.php';
 
 <form>
     <div class="container">
-
-
 
         <div class="form-check col-md-6">
             <?php
