@@ -1,7 +1,7 @@
 <?php 
 
 require_once __DIR__ . '/parameters-controller.php';
-require_once __DIR__ . '/pages-controlleur.php';
+require_once __DIR__ . '/pages-controller.php';
 
 include __DIR__ . '/../views/header.php';
 include __DIR__ . '/../views/users/userPref.php';

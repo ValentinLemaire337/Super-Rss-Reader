@@ -3,40 +3,46 @@
 require __DIR__ . '/../../controllers/parameters-controller.php';
 require __DIR__ . '/../../controllers/data.php';
 
-// ici on traitera les données user concernant le type de flux rss qu'il veut et le nombre d'info a affiché
 ?>
 
-
-<form>
+<form method="post">
     <div class="container">
 
         <div class="form-check col-md-6">
-            <?php
-            foreach ($subjects as $key => $url) {
-                echo '<div><input class="form-check-input" type="checkbox" value="' . $url . '" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault" value="">' . $key . '</label></div>';
-            }
-            ?>
+            <div>
+                <?php
+                    $i = 0;
+                    foreach ($subjects as $key => $url) {
+                        echo '<div><input class="form-check-input" name="userFeed[]" type="checkbox" value="'. $url .'" id="userFeed'.$i.'">
+                    <label class="form-check-label" for="userFeed'.$i.'">' . $key . '</label></div>';
+                    $i++;
+                    }
+                ?>
+            </div>
+            <?= $error['userFeed'] ?? '' ?>
         </div>
         <div class="radio md-6">
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="userNbArticle" id="userNbArticle" value="1">
+                <label class="form-check-label" for="userNbArticle">
                     6 articles par pages
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="userNbArticle" id="userNbArticle2" value="2">
+                <label class="form-check-label" for="userNbArticle2">
                     9 articles par pages
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="userNbArticle" id="userNbArticle3" value="3">
+                <label class="form-check-label" for="userNbArticle3">
                     12 articles par pages
                 </label>
             </div>
+        </div>
+        <div>
+            <button>Valider</button>
         </div>
     </div>
 </form>
