@@ -32,6 +32,7 @@
         }
 
         $userNbArticle = filter_input(INPUT_POST, 'userNbArticle', FILTER_SANITIZE_NUMBER_INT);
+        d($userNbArticle);
         if(!empty($userNbArticle)){
             if(($userNbArticle < 1)||($userNbArticle> 5)){
                 $error['userNbArticle'] = 'Veuillez choisir un niveau d\'étude valide';

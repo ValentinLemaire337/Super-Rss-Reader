@@ -6,4 +6,5 @@ $subjects = ['Tests' => 'https://www.01net.com/tests/feed/','Sécurité' => 'htt
 // tableau messages erreurs
 $error = [];
 
-// autres data
+// récupération des données de formulaire
+
