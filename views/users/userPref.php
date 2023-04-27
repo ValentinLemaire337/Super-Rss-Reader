@@ -1,4 +1,3 @@
-<?php
 
 require __DIR__ . '/../../controllers/parameters-controller.php';
 require __DIR__ . '/../../controllers/data.php';
