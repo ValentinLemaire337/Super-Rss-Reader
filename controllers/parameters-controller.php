@@ -7,9 +7,9 @@ $subjects = ['Tests' => 'https://www.01net.com/tests/feed/','Sécurité' => 'htt
 
 $xml =  simplexml_load_file($subjects['Sécurité']);
 
-$subjectsTitle = $xml->channel->item->title;
-foreach ($subjectsTitle as $subjectTitle) {
-    d($subjectTitle);
+$subjectsItems = $xml->channel->item;
+foreach ($subjectsItems as $subjectsItem) {
+    echo $subjectsItem->title;
 }
 
 // d($xml->channel);
