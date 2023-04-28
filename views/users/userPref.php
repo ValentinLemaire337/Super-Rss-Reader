@@ -3,19 +3,19 @@ require __DIR__ . '/../../controllers/parameters-controller.php';
 require __DIR__ . '/../../controllers/data.php';
 
 ?>
-
+<button id="backToform">retour formulaire</button>
 <form method="post">
     <div class="container">
 
         <div class="form-check col-md-6">
             <div>
                 <?php
-                    $i = 0;
-                    foreach ($subjects as $key => $url) {
-                        echo '<div><input class="form-check-input" name="userFeed[]" type="checkbox" value="'. $url .'" id="userFeed'.$i.'">
-                    <label class="form-check-label" for="userFeed'.$i.'">' . $key . '</label></div>';
+                $i = 0;
+                foreach ($subjects as $key => $url) {
+                    echo '<div><input class="form-check-input" name="userFeed[]" type="checkbox" value="' . $url . '" id="userFeed' . $i . '">
+                    <label class="form-check-label" for="userFeed' . $i . '">' . $key . '</label></div>';
                     $i++;
-                    }
+                }
                 ?>
             </div>
             <?= $error['userFeed'] ?? '' ?>
@@ -23,7 +23,7 @@ require __DIR__ . '/../../controllers/data.php';
         <div class="radio md-6">
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="userNbArticle" id="userNbArticle" value="1">
-                <label class="form-check-label" for="userNbArticle" >
+                <label class="form-check-label" for="userNbArticle">
                     6 articles par pages
                 </label>
             </div>
@@ -41,8 +41,6 @@ require __DIR__ . '/../../controllers/data.php';
             </div>
             <p id="errorCheckboxes"></p>
         </div>
-        <div>
-            <button id="valider">Valider</button>
-        </div>
     </div>
 </form>
+<div class="valider"><button id="valider">Valider</button></div>

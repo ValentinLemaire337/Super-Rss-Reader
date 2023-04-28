@@ -1,129 +1,155 @@
+/*TYPO*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+
+/*DARK MODE*/
 :root {
-    --bg-color: #ffffff;
-    --text-color:#808080;
+  --bg-color: #ffffff;
+  --text-color: #808080;
 }
 
 [data-theme="dark"] {
-    --bg-color: #222222;
-    --text-color: #e0e0e0;
+  --bg-color: #565656;
+  --text-color: #e0e0e0;
 }
 
 body {
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    font-family: "montserrat";
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: "montserrat";
 }
 
 .toggle-button {
-    -webkit-appearance: none;
-    outline: none;
-    width: 100px;
-    height: 50px;
-    background-color: #808080;
-    border-radius: 50px;
-    position: relative;
-    transition: .4s;
+  -webkit-appearance: none;
+  outline: none;
+  width: 50px;
+  height: 25px;
+  background-color: #808080;
+  border-radius: 50px;
+  position: relative;
+  transition: 0.4s;
 }
 
-.toggle-button:before{
-    content: "";
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    top: 0;
-    bottom: 0;
-    background-color: #FF003D;
-    transition: .4s;
+.toggle-button:before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  top: 0;
+  bottom: 0;
+  background-color: #ff003d;
+  transition: 0.4s;
 }
 
 .toggle-button:checked {
-    background-color: #808080;
+  background-color: #808080;
 }
 .toggle-button:checked:before {
-    transform: translate(100%);
-    background-color: #FF003D;
-    transition: .4s;
+  transform: translate(100%);
+  background-color: #ff003d;
+  transition: 0.4s;
 }
 
-.nav-link{
-color: #FF003D;
-}
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
-
-/*FOOTER*/
-footer {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    height: 200px;
-    background-color: #ff003d;
-    align-items: center;
-}
-
-.socialNetworks {
-    display: flex;
-    flex-direction: column;
-    width: 50px;
-    float: right;
-    margin: 10px;
-    margin-top: 30px;
-}
-
-p {
-    padding-left: 10px;
-    color: #000000;
-}
-
-a {
-    color: #000000;
-    text-decoration: none;
-    padding-left: 10px;
-}
-
-/*ARTICLES CARDS*/
-.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-h5 {
-    text-align: center;
-}
-h6 {
-    text-align: center;
-}
-
-.btn {
-    background-color: #ff003d;
-    color: #ffffff;
-}
-
-#btn {
-    background-color: #ff003d; /* Blue background */
-    border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 12px 16px; /* Some padding */
-    font-size: 16px; /* Set a font size */
-    cursor: pointer; /* Mouse pointer on hover */
-}
-
-#btn:hover {
-    background-color: #000000;
+/*NAVBAR*/
+.nav-link {
+  color: #ff003d;
 }
 
 /*FORM*/
-#valider{
-    background-color: #ff003d; /* Blue background */
-    border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 12px 16px; /* Some padding */
-    font-size: 16px; /* Set a font size */
-    cursor: pointer; /* Mouse pointer on hover */
+form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#valider:hover{
-    background-color: #000000;
+.valider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+#valider {
+  background-color: #ff003d;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
 
+#valider:hover {
+  background-color: #000000;
+}
+
+/*FOOTER*/
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  height: 200px;
+  background-color: #ff003d;
+  align-items: center;
+}
+
+.socialNetworks {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  float: right;
+  margin: 10px;
+  margin-top: 30px;
+}
+
+p {
+  padding-left: 10px;
+  color: #000000;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+/*ARTICLES CARDS*/
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+h5 {
+  text-align: center;
+}
+h6 {
+  text-align: center;
+}
+
+.btn {
+  background-color: #ff003d;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/*RETOUR FORM*/
+#backToform {
+  position: fixed;
+  top: 90px;
+  right: 0px;
+  background-color: #ff003d;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#backToform:hover {
+  background-color: #000000;
+}
