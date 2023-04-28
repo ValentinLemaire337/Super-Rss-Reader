@@ -7,7 +7,7 @@
                         <h5 class="card-title">TITRE</h5>
                         <h6>Le 27/04/2023</h6>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn"></a>
+                        <a href="#" class="btn">+</a>
                     </div>
             </div>
         </div>
@@ -39,4 +39,3 @@
         </div>
 </div>
 
-<button id="btn">retour form</i></button>
