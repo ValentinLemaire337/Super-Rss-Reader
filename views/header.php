@@ -6,7 +6,6 @@
 
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +24,7 @@
             foreach ($userCookie as $subject) {
                 // d($userCookie);
                 echo '<ul class="nav justify-content-center"><li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="'.$subject ?? '[]'.'">' . $subject ?? '[]'. '</a></li>
+                    <a class="nav-link active" aria-current="page" href="'.$subject.'">' . $subject. '</a></li>
                     </ul>';
             } ?>
 
