@@ -23,7 +23,7 @@ require __DIR__ . '/../../controllers/data.php';
         <div class="radio md-6">
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="userNbArticle" id="userNbArticle" value="1">
-                <label class="form-check-label" for="userNbArticle">
+                <label class="form-check-label" for="userNbArticle" >
                     6 articles par pages
                 </label>
             </div>
@@ -39,9 +39,10 @@ require __DIR__ . '/../../controllers/data.php';
                     12 articles par pages
                 </label>
             </div>
+            <p id="errorCheckboxes"></p>
         </div>
         <div>
-            <button>Valider</button>
+            <button id="valider">Valider</button>
         </div>
     </div>
 </form>
