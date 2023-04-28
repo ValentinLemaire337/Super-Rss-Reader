@@ -23,9 +23,9 @@
                 <img src="/../public/assets/img/logo.png" width="24" height="24" viewBox="0 0 24 24"></a>
             <?php
             foreach ($userFeed as $key => $subjects) {
-                d($userFeed);
+                // d($userFeed);
                 echo '<ul class="nav justify-content-center"><li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">' . $key. '</a></li>
+                    <a class="nav-link active" aria-current="page" href="'.$subjects.'">' . $key. '</a></li>
                     </ul>';
             } ?>
 

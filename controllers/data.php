@@ -6,5 +6,22 @@ $subjects = ['Tests' => 'https://www.01net.com/tests/feed/','Sécurité' => 'htt
 // tableau messages erreurs
 $error = [];
 
-// récupération des données de formulaire
+    //récupération des données cookies
 
+    $cookieRSSSubjectOne = $_COOKIE[0] ?? '';
+    $cookieRSSSubjectTwo = $_COOKIE[1]  ?? '';
+    $cookieRSSSubjectThree = $_COOKIE[2]  ?? '';
+    // d($_COOKIE);
+
+    $userNbArticleInCookie = $_COOKIE['userNbArticle'];
+
+    //Traitement des flux RSS
+
+    
+
+    // $xml =  simplexml_load_file($subjects['Sécurité']);
+
+    // $articles = $xml->channel->item;
+    // $articleTitle = $articles->title;
+    // $articleDesc = $articles->description;
+    // $articleDate = $articles->pubDate;

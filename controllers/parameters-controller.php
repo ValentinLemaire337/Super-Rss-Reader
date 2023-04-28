@@ -3,6 +3,8 @@
     require __DIR__ . '/data.php';
 
 
+
+
     // test de récupération des feeds RSS
     // var_dump($subjects);
 
@@ -25,21 +27,33 @@
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-        $userFeed = filter_input(INPUT_POST, 'userFeed', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
-        d($userFeed);
-        if(!in_array($userFeed, $subjects)){
+        $userFeed = filter_input(INPUT_POST, 'userFeed', FILTER_VALIDATE_URL, FILTER_REQUIRE_ARRAY);
+        // d($userFeed);
+        if(!array_intersect($userFeed, $subjects)){
             $error['userFeed'] = 'Veuillez sélectionner au moins un flux RSS';
         }
+            foreach ($userFeed as $key => $url) {
+                setcookie($key, $url);
+            }
+        
 
         $userNbArticle = filter_input(INPUT_POST, 'userNbArticle', FILTER_SANITIZE_NUMBER_INT);
-        d($userNbArticle);
+        // d($userNbArticle);
         if(!empty($userNbArticle)){
-            if(($userNbArticle < 1)||($userNbArticle> 5)){
-                $error['userNbArticle'] = 'Veuillez choisir un niveau d\'étude valide';
+            if(($userNbArticle < 1)||($userNbArticle> 3)){
+                $error['userNbArticle'] = 'Veuillez choisir le nombre d\'articles souhaité.';
+            }else{
+                setcookie('userNbArticle', $userNbArticle);
             }
         }
         // une fois tout validé on redirige vers les articles
+
     }
+
+    // $test = $_COOKIE[0];
+    // $xmlTest = simplexml_load_file($test);
+    // d($xmlTest);
+
 
 
 
