@@ -27,19 +27,16 @@
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-        $userFeed = filter_input(INPUT_POST, 'userFeed', FILTER_VALIDATE_URL, FILTER_REQUIRE_ARRAY);
-        // d($userFeed);
-        if(!array_intersect($userFeed, $subjects)){
-            $error['userFeed'] = 'Veuillez sélectionner au moins un flux RSS';
+        $userChoice = filter_input(INPUT_POST, 'userChoice', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
+        // d($userChoice);
+        $userChoiceReverse = array_flip($userChoice);
+        // dd($userChoiceReverse);
+        if(!array_intersect_key($userChoiceReverse, $subjects)){
+            $error['userChoice'] = 'Veuillez sélectionner au moins un flux RSS';
+            dd(array_intersect_key($userChoice, $subjects));
+        }else{
+            setcookie('userChoice', json_encode($userChoice),time()+60*60*24*3, '/' );
         }
-
-        // pour stocker un tableau dans un cookie -> json_encode
-        // on doit stocké un tableau dans un tableau
-        // $_COOKIE[nomCookie] = array(nomDeSujet, , ,array(URL1, URL2, URL3))
-            foreach ($userFeed as $key => $url) {
-                setcookie($key, $url);
-            }
-        
 
         $userNbArticle = filter_input(INPUT_POST, 'userNbArticle', FILTER_SANITIZE_NUMBER_INT);
         // d($userNbArticle);
@@ -54,9 +51,9 @@
 
     }
 
-    // $test = $_COOKIE[0];
-    // $xmlTest = simplexml_load_file($test);
-    // d($xmlTest);
+
+
+
 
 
 

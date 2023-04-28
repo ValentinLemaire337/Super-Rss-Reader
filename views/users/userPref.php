@@ -11,13 +11,14 @@ require __DIR__ . '/../../controllers/data.php';
                 <?php
                 $i = 0;
                 foreach ($subjects as $key => $url) {
-                    echo '<div><input class="form-check-input" name="userFeed[]" type="checkbox" value="' . $url . '" id="userFeed' . $i . '">
-                    <label class="form-check-label" for="userFeed' . $i . '">' . $key . '</label></div>';
+                    echo '<div><label class="form-check-label" for="userChoice' . $i . '">' . $key .
+                    '<input class="form-check-input" name="userChoice[]" type="checkbox" value="' . $key . '" id="userChoice' . $i . '">
+                    </label></div>';
                     $i++;
                 }
                 ?>
             </div>
-            <?= $error['userFeed'] ?? '' ?>
+            <?= $error['userChoice'] ?? '' ?>
             
         </div>
     </div>
@@ -41,7 +42,6 @@ require __DIR__ . '/../../controllers/data.php';
                     12 articles par pages
                 </label>
             </div>
-            <p id="errorCheckboxes"></p>
         </div>
     </div>
     <div class="valider"><button id="valider">Valider</button></div>
