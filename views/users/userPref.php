@@ -6,7 +6,8 @@ require __DIR__ . '/../../controllers/data.php';
 <button id="backToform">retour formulaire</button>
 <form method="post">
     <div class="container">
-    <div>
+    
+
         <div class="form-check col-md-6">
             <div>
                 <?php
@@ -19,6 +20,7 @@ require __DIR__ . '/../../controllers/data.php';
                 ?>
             </div>
             <?= $error['userFeed'] ?? '' ?>
+            <div class="valider"><button id="valider">Valider</button></div>
         </div>
     </div>
     <div>
