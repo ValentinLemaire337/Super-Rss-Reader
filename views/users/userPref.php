@@ -5,9 +5,7 @@ require __DIR__ . '/../../controllers/data.php';
 ?>
 <button id="backToform">retour formulaire</button>
 <form method="post">
-    <div class="container">
-    
-
+    <div class="container row">
         <div class="form-check col-md-6">
             <div>
                 <?php
@@ -20,11 +18,11 @@ require __DIR__ . '/../../controllers/data.php';
                 ?>
             </div>
             <?= $error['userFeed'] ?? '' ?>
-            <div class="valider"><button id="valider">Valider</button></div>
+            
         </div>
     </div>
     <div>
-        <div class="radio md-6">
+        <div class="radio col-md-6">
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="userNbArticle" id="userNbArticle" value="1">
                 <label class="form-check-label" for="userNbArticle">
@@ -46,8 +44,7 @@ require __DIR__ . '/../../controllers/data.php';
             <p id="errorCheckboxes"></p>
         </div>
     </div>
+    <div class="valider"><button id="valider">Valider</button></div>
 </div>
-<div class="valider">
-    <button id="valider">Valider</button>
-</div>
+
 </form>
