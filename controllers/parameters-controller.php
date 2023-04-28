@@ -32,6 +32,10 @@
         if(!array_intersect($userFeed, $subjects)){
             $error['userFeed'] = 'Veuillez sélectionner au moins un flux RSS';
         }
+
+        // pour stocker un tableau dans un cookie -> json_encode
+        // on doit stocké un tableau dans un tableau
+        // $_COOKIE[nomCookie] = array(nomDeSujet, , ,array(URL1, URL2, URL3))
             foreach ($userFeed as $key => $url) {
                 setcookie($key, $url);
             }
