@@ -14,10 +14,11 @@ $error = [];
     // d($_COOKIE);
 
     $userNbArticleInCookie = $_COOKIE['userNbArticle'];
+    d($userNbArticleInCookie);
 
     //Traitement des flux RSS
 
-    
+
 
     // $xml =  simplexml_load_file($subjects['Sécurité']);
 
