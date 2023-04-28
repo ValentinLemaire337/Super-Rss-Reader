@@ -1,5 +1,6 @@
 <?php
     require_once __DIR__ . '/../helpers/dd.php';
+    require __DIR__ . '/../config/default.php';
     require __DIR__ . '/data.php';
 
 

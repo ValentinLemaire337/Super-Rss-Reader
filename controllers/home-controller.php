@@ -1,8 +1,6 @@
 <?php 
 
 require __DIR__ . '/../config/default.php';
-// require_once __DIR__ . '/pages-controller.php';
-// require_once __DIR__ . '/parameters-controller.php';
 
 
 include __DIR__ . '/../views/header.php';

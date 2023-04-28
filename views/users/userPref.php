@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . '/../../controllers/parameters-controller.php';
 require __DIR__ . '/../../controllers/data.php';
+require __DIR__. '/../../config/default.php';
 
 ?>
 <button id="backToform">retour formulaire</button>
