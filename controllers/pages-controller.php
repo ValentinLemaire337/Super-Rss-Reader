@@ -21,6 +21,8 @@ $xml =  simplexml_load_file($subjectChosen);
     $articleDate = $articles->pubDate;
     $articleLink = $articles->link;
 
+    // dd($xml);
+
 
 
 
