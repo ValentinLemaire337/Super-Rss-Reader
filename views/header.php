@@ -27,14 +27,6 @@
                     <a class="nav-link active" aria-current="page" href="'.$subject.'">' . $subject. '</a></li>
                     </ul>';
             } ?>
-
-        <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Catégorie 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Catégorie 3</a>
-                </li>
-            </ul> -->
         <input type="checkbox" class="toggle-button">
         </div>
     </nav>

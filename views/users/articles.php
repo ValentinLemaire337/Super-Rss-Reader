@@ -1,7 +1,9 @@
 <?php
+// Date en français //
 $dateInFrench = setlocale(LC_TIME, 'fra.UTF-8');
 date_default_timezone_set('Europe/Paris');
 $dateCard = date('l j F Y');
+
 
 ?>
 

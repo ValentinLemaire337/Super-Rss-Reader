@@ -3,7 +3,7 @@
 require_once __DIR__ . '/..//config/default.php';
 require_once __DIR__ . '/../helpers/dd.php';
 
-// afficher la liste des article
+// afficher la liste des articles
 
 if(isset($userCookie)){
 
@@ -11,6 +11,10 @@ if(isset($userCookie)){
     
 
 }
+
+//récuperations//
+// articles titres, liens, descriptions //
+
 
 
 
