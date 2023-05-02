@@ -67,16 +67,19 @@ width: 50px;
 
 /*FORM*/
 form {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 400px;
+}
+h1{
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .valider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+margin-top: 30px;
 }
 
 #valider {
@@ -111,15 +114,23 @@ footer {
   margin-top: 30px;
 }
 
+.infos{
+  display: flex;
+  flex-direction: column;
+}
+
 h4 {
+  margin-top: 30px;
   padding-left: 10px;
   color: #00C6B3;
+
 }
 
 a {
   color: #00C6B3;
   text-decoration: none;
   padding-left: 10px;
+
 }
 
 /*ARTICLES CARDS*/
