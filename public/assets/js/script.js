@@ -12,7 +12,7 @@ function switchTheme(e) {
 toggleSwitch.addEventListener("change", switchTheme, false);
 
 
-let button = document.getElementById('valider');
-button.addEventListener(click, function()){
-  document.location = '/controllers/subjects_controller.php';
-}
+// let button = document.getElementById('valider');
+// button.addEventListener('click', () => {
+//   document.location = '/controllers/subjects_controller.php';
+// })

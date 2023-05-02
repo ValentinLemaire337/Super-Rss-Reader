@@ -9,6 +9,7 @@ require __DIR__ . '/data.php';
 // afficher la liste des articles
 
 $subjectOfArticle = $_GET['subject'];
+
 // dd($subjectOfArticle);
 $subjectChosen = $subjects[$subjectOfArticle];
 // dd($subjectChosen);
