@@ -10,7 +10,7 @@ require __DIR__. '/../../config/default.php';
         <div class="form-check col-md-6">
             <div>
                 <?php
-                $i = 0;
+                $i = 0; 
                 foreach ($subjects as $key => $url) {
                     echo '<div><label class="form-check-label" for="userChoice' . $i . '">' . $key .
                     '<input class="form-check-input" name="userChoice[]" type="checkbox" value="' . $key . '" id="userChoice' . $i . '">

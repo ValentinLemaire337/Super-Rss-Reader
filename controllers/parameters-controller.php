@@ -34,7 +34,7 @@
         // dd($userChoiceReverse);
         if(!array_intersect_key($userChoiceReverse, $subjects)){
             $error['userChoice'] = 'Veuillez sélectionner au moins un flux RSS';
-            dd(array_intersect_key($userChoice, $subjects));
+            // dd(array_intersect_key($userChoice, $subjects));
         }else{
             setcookie('userChoice', json_encode($userChoice),time()+60*60*24*3, '/' );
         }
@@ -45,7 +45,7 @@
             if(($userNbArticle < 1)||($userNbArticle> 3)){
                 $error['userNbArticle'] = 'Veuillez choisir le nombre d\'articles souhaité.';
             }else{
-                setcookie('userNbArticle', $userNbArticle);
+                setcookie('userNbArticle', $userNbArticle); // pas de dureé ni d accibilité ? 
             }
         }
         // une fois tout validé on redirige vers les articles
