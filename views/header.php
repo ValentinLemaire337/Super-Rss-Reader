@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar bg-dark" data-bs-theme="dark">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="http://super-rss-reader.localhost/controllers/home-controller.php">
                 <img src="/../public/assets/img/logo.png" width="24" height="24" viewBox="0 0 24 24"></a>
             <?php
             foreach ($userCookie as $subject) {

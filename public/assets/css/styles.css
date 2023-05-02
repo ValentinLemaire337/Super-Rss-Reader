@@ -18,6 +18,11 @@ body {
   font-family: "montserrat";
 }
 
+.card-body{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
 .toggle-button {
   -webkit-appearance: none;
   outline: none;
