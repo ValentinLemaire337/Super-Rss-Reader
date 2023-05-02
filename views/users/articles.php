@@ -8,14 +8,27 @@ $dateInFrench = setlocale(LC_TIME, 'fra.UTF-8');
 date_default_timezone_set('Europe/Paris');
 $dateCard = date('l j F Y');
 
+if($userNbArticleChoice == 1){
+    $articlesToShow = 6;
+}else if($userNbArticleChoice == 2){
+    $articlesToShow = 9;
+}else if($userNbArticleChoice == 3){
+    $articlesToShow = 12;
+}else{
+    $error['nbArticle'] = 'Veuillez choisir un nombre d\'articles à visionner.';
+}
+
+// dd($articlesToShow);
 ?>
 
 
     <div class="container">
         <div>
             <?php  
+            $nbArticle = 1;
             foreach ($articles as $article){
-                echo '
+                if($articlesToShow >= $nbArticle){
+                    echo '
                     <div class="card" >
                             <div class="card-body">
                                 <h6>'. $article->pubDate .'</h6>
@@ -25,6 +38,9 @@ $dateCard = date('l j F Y');
                             </div>
                     </div>
                     ';
+                    $nbArticle++;
+                }
+                
             }
             
             ?>
