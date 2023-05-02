@@ -44,7 +44,7 @@ require __DIR__ . '/../../config/default.php';
                     12 articles par pages
                 </label>
             </div>
-            <div class="valider col-md-4"><button id="valider" onClick="document.location">Valider</button></div>
+            <div class="valider col-md-4"><button id="valider">Valider</button></div>
         </div>
     </div>
     </div>

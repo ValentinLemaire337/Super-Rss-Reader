@@ -13,6 +13,6 @@ toggleSwitch.addEventListener("change", switchTheme, false);
 
 
 let button = document.getElementById('valider');
-button.addEventListener(click, function()){
-  document.location = '/controllers/subjects_controller.php';
-}
+button.addEventListener('click', () =>{
+location.href= '';
+})
