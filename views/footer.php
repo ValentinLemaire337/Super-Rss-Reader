@@ -4,7 +4,7 @@
         <img src="/../public/assets/img/instagram.svg" id="instagram" alt="">
     </div>
     <div class="infos">
-        <p> INFOS :</p>
+        <h4> INFOS :</h4>
         <a href="#">CGU</a>
     </div>
 </footer>

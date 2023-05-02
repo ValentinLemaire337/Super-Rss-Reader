@@ -6,7 +6,7 @@ require __DIR__ . '/data.php';
 
 
 
-// afficher la liste des article
+// afficher la liste des articles
 
 $subjectOfArticle = $_GET['subject'];
 // dd($subjectOfArticle);
@@ -24,6 +24,10 @@ $xml =  simplexml_load_file($subjectChosen);
     // dd($xml);
 
 
+
+
+//récuperations//
+// articles titres, liens, descriptions //
 
 
 
