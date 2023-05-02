@@ -1,6 +1,6 @@
 <?php 
 
-    require __DIR__ . '/../../controllers/pages-controller.php';
+    // require __DIR__ . '/../../controllers/pages-controller.php';
     require __DIR__ . '/../../controllers/data.php';
     require __DIR__ . '/../../config/default.php';
 
