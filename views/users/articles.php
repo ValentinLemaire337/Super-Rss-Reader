@@ -8,18 +8,15 @@ $dateInFrench = setlocale(LC_TIME, 'fra.UTF-8');
 date_default_timezone_set('Europe/Paris');
 $dateCard = date('l j F Y');
 
-
-
-
 ?>
 
-<div>
+
     <div class="container">
         <div>
             <?php  
             foreach ($articles as $article){
                 echo '
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" >
                             <div class="card-body">
                                 <h6>'. $article->pubDate .'</h6>
                                 <h5 class="card-title">'. $article->title. '</h5>
