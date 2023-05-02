@@ -4,7 +4,7 @@ require __DIR__ . '/../../controllers/data.php';
 require __DIR__. '/../../config/default.php';
 
 ?>
-<button id="backToform">retour formulaire</button>
+
 <form method="post">
     <div class="container row">
         <div class="form-check col-md-6">
