@@ -7,7 +7,7 @@ require __DIR__ . '/../../config/default.php';
 
 <button id="backToform">retour formulaire</button>
 <h1>CHOISISSEZ VOS OPTIONS</h1>
-<form method="post">
+<form method="post" action="/controllers/subjects_controller.php">
     <div class="container row form-check col-md-4">
         <?php
         $i = 0;
@@ -44,11 +44,7 @@ require __DIR__ . '/../../config/default.php';
                     12 articles par pages
                 </label>
             </div>
-<<<<<<< HEAD
-            <div class="valider col-md-4"><button id="valider" onclick="location.href='/controllers/subjects_controller.php'">Valider</button></div>
-=======
             <div class="valider col-md-4"><button id="valider">Valider</button></div>
->>>>>>> f973f521a7719265803174540a52dc8aaf3bf7bb
         </div>
     </div>
     </div>
