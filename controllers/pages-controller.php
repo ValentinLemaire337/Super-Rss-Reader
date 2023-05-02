@@ -2,15 +2,27 @@
 
 require_once __DIR__ . '/..//config/default.php';
 require_once __DIR__ . '/../helpers/dd.php';
+require __DIR__ . '/data.php';
+
+
 
 // afficher la liste des articles
 
-if(isset($userCookie)){
+$subjectOfArticle = $_GET['subject'];
+// dd($subjectOfArticle);
+$subjectChosen = $subjects[$subjectOfArticle];
+// dd($subjectChosen);
 
-    // dd($userCookie);
-    
+$xml =  simplexml_load_file($subjectChosen);
 
-}
+    $articles = $xml->channel->item;
+    $articleTitle = $articles->title;
+    $articleDesc = $articles->description;
+    $articleDate = $articles->pubDate;
+    $articleLink = $articles->link;
+
+
+
 
 //récuperations//
 // articles titres, liens, descriptions //
@@ -32,3 +44,6 @@ if(isset($userCookie)){
     // $articleTitle = $articles->title;
     // $articleDesc = $articles->description;
     // $articleDate = $articles->pubDate;
+    include __DIR__ . '/../views/header.php';
+    include __DIR__ . '/../views/users/articles.php';
+    include __DIR__ . '/../views/footer.php';

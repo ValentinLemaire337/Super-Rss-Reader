@@ -24,7 +24,7 @@
             foreach ($userCookie as $subject) {
                 // d($userCookie);
                 echo '<ul class="nav justify-content-center"><li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="'.$subject.'">' . $subject. '</a></li>
+                    <a class="nav-link active" aria-current="page" href="http://super-rss-reader.localhost/controllers/pages-controller.php?subject='.$subject.'">' . $subject. '</a></li>
                     </ul>';
             } ?>
         <input type="checkbox" class="toggle-button">
