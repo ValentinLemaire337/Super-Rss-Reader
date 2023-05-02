@@ -21,7 +21,7 @@ $dateCard = date('l j F Y');
                         <h6>'. $articleDate .'</h6>
                         <h5 class="card-title">'. $articleTitle. '</h5>
                         <p class="card-text img-card">'. $articleDesc .'</p>
-                        <a href="'. $articleLink .'" class="btn">+</a>
+                        <a href="'. $articleLink .'" class="btn">En savoir plus</a>
                     </div>
             </div>
             '
