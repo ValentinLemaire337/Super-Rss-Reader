@@ -9,22 +9,27 @@ date_default_timezone_set('Europe/Paris');
 $dateCard = date('l j F Y');
 
 
+
+
 ?>
 
 <div>
     <div class="container">
         <div>
             <?php  
-            echo '
-            <div class="card">
-                    <div class="card-body">
-                        <h6>'. $articleDate .'</h6>
-                        <h5 class="card-title">'. $articleTitle. '</h5>
-                        <p class="card-text img-card">'. $articleDesc .'</p>
-                        <a href="'. $articleLink .'" class="btn">En savoir plus</a>
+            foreach ($articles as $article){
+                echo '
+                    <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h6>'. $article->pubDate .'</h6>
+                                <h5 class="card-title">'. $article->title. '</h5>
+                                <p class="card-text img-card">'. $article->description .'</p>
+                                <a href="'. $article->link .'" class="btn">Accèder à l\'article complet</a>
+                            </div>
                     </div>
-            </div>
-            '
+                    ';
+            }
+            
             ?>
         </div>
 </div>
