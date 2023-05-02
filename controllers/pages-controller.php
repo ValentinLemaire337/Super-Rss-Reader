@@ -16,10 +16,6 @@ $subjectChosen = $subjects[$subjectOfArticle];
 $xml =  simplexml_load_file($subjectChosen);
 
     $articles = $xml->channel->item;
-    $articleTitle = $articles->title;
-    $articleDesc = $articles->description;
-    $articleDate = $articles->pubDate;
-    $articleLink = $articles->link;
 
     // dd($xml);
 

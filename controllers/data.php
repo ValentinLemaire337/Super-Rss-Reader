@@ -6,8 +6,8 @@
     $subjects = ['Tests' => 'https://www.01net.com/tests/feed/',
     'Sécurité' => 'https://www.01net.com/actualites/securite/feed/',
     'Football' =>'https://rmcsport.bfmtv.com/rss/football/',
-    'Actualités Jeux Vidéo' => 'https://www.jeuxactu.com/rss/ja.rss', 
-    'Test Jeux Vidéo' =>'https://www.jeuxactu.com/rss/tests.rss'];
+    'Produits' => 'https://www.01net.com/actualites/produits/feed/', 
+    'Rugby' =>'https://rmcsport.bfmtv.com/rss/rugby/'];
 
 // tableau messages erreurs
     $error = [];
