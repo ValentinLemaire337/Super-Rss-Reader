@@ -55,6 +55,11 @@ body {
   color: #00C6B3;
 }
 
+.navbar-brand img{
+height: 50px;
+width: 50px;
+}
+
 /*FORM*/
 form {
   margin-top: 50px;
